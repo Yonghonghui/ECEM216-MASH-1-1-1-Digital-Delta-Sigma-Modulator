@@ -5,8 +5,7 @@
 ![Frequency](https://img.shields.io/badge/Frequency-500MHz-red.svg)
 ![Course](https://img.shields.io/badge/UCLA-ECE216A-blue.svg)
 
-> **Course:** ECE 216A - Design of VLSI Circuits and Systems (UCLA)  
-> **Group:** 14  
+> **Course:** ECE 216A - Design of VLSI Circuits and Systems (UCLA)   
 > **Members:** Yanghonghui Chen, Xuancheng Liu
 
 ## 📖 Overview
