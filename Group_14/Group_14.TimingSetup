@@ -1,0 +1,570 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 2
+        -max_paths 10
+Design : M216A_TopModule
+Version: X-2025.06-SP3
+Date   : Sun Nov 30 00:34:32 2025
+****************************************
+
+Operating Conditions: ss0p72v125c   Library: N16ADFP_StdCellss0p72v125c
+Wire Load Model Mode: segmented
+
+  Startpoint: acc2_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: acc3_reg[15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  M216A_TopModule    ZeroWireload          N16ADFP_StdCellss0p72v125c
+  M216A_TopModule_DW01_add_1
+                     ZeroWireload          N16ADFP_StdCellss0p72v125c
+  M216A_TopModule_DW01_add_0
+                     ZeroWireload          N16ADFP_StdCellss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  acc2_reg[0]/CP (DFCNQD2BWP16P90LVT)                     0.00       0.00 r
+  acc2_reg[0]/Q (DFCNQD2BWP16P90LVT)                      0.04       0.04 f
+  U88/Z (DEL050D1BWP20P90)                                0.09       0.13 f
+  add_127/B[0] (M216A_TopModule_DW01_add_0)               0.00       0.13 f
+  add_127/U17/Z (AN2D1BWP16P90LVT)                        0.01       0.14 f
+  add_127/U1_1/CO (FA1D2BWP20P90)                         0.04       0.18 f
+  add_127/U1_2/CO (FA1D2BWP20P90)                         0.04       0.22 f
+  add_127/U1_3/CO (FA1D2BWP20P90)                         0.04       0.25 f
+  add_127/U1_4/CO (FA1D2BWP20P90)                         0.04       0.29 f
+  add_127/U1_5/CO (FA1D2BWP20P90)                         0.04       0.33 f
+  add_127/U1_6/CO (FA1D2BWP20P90)                         0.04       0.37 f
+  add_127/U1_7/CO (FA1D2BWP20P90)                         0.04       0.40 f
+  add_127/U1_8/CO (FA1D2BWP20P90)                         0.04       0.44 f
+  add_127/U1_9/CO (FA1D2BWP20P90)                         0.04       0.48 f
+  add_127/U1_10/CO (FA1D2BWP20P90)                        0.04       0.52 f
+  add_127/U1_11/CO (FA1D2BWP20P90)                        0.04       0.55 f
+  add_127/U1_12/CO (FA1D2BWP20P90)                        0.04       0.59 f
+  add_127/U1_13/CO (FA1D2BWP20P90)                        0.04       0.63 f
+  add_127/U1_14/CO (FA1D2BWP20P90)                        0.04       0.67 f
+  add_127/U1_15/S (FA1D1BWP20P90)                         0.06       0.73 r
+  add_127/SUM[15] (M216A_TopModule_DW01_add_0)            0.00       0.73 r
+  acc3_reg[15]/D (DFCNQD2BWP16P90LVT)                     0.00       0.73 r
+  data arrival time                                                  0.73
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.10       1.90
+  acc3_reg[15]/CP (DFCNQD2BWP16P90LVT)                    0.00       1.90 r
+  library setup time                                     -0.02       1.88
+  data required time                                                 1.88
+  --------------------------------------------------------------------------
+  data required time                                                 1.88
+  data arrival time                                                 -0.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.16
+
+
+  Startpoint: acc2_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: acc3_reg[15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  M216A_TopModule    ZeroWireload          N16ADFP_StdCellss0p72v125c
+  M216A_TopModule_DW01_add_1
+                     ZeroWireload          N16ADFP_StdCellss0p72v125c
+  M216A_TopModule_DW01_add_0
+                     ZeroWireload          N16ADFP_StdCellss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  acc2_reg[0]/CP (DFCNQD2BWP16P90LVT)                     0.00       0.00 r
+  acc2_reg[0]/Q (DFCNQD2BWP16P90LVT)                      0.04       0.04 f
+  U88/Z (DEL050D1BWP20P90)                                0.09       0.13 f
+  add_127/B[0] (M216A_TopModule_DW01_add_0)               0.00       0.13 f
+  add_127/U17/Z (AN2D1BWP16P90LVT)                        0.01       0.14 f
+  add_127/U1_1/CO (FA1D2BWP20P90)                         0.04       0.18 f
+  add_127/U1_2/CO (FA1D2BWP20P90)                         0.04       0.22 f
+  add_127/U1_3/CO (FA1D2BWP20P90)                         0.04       0.25 f
+  add_127/U1_4/CO (FA1D2BWP20P90)                         0.04       0.29 f
+  add_127/U1_5/CO (FA1D2BWP20P90)                         0.04       0.33 f
+  add_127/U1_6/CO (FA1D2BWP20P90)                         0.04       0.37 f
+  add_127/U1_7/CO (FA1D2BWP20P90)                         0.04       0.40 f
+  add_127/U1_8/CO (FA1D2BWP20P90)                         0.04       0.44 f
+  add_127/U1_9/CO (FA1D2BWP20P90)                         0.04       0.48 f
+  add_127/U1_10/CO (FA1D2BWP20P90)                        0.04       0.52 f
+  add_127/U1_11/CO (FA1D2BWP20P90)                        0.04       0.55 f
+  add_127/U1_12/CO (FA1D2BWP20P90)                        0.04       0.59 f
+  add_127/U1_13/CO (FA1D2BWP20P90)                        0.04       0.63 f
+  add_127/U1_14/CO (FA1D2BWP20P90)                        0.04       0.67 f
+  add_127/U1_15/S (FA1D1BWP20P90)                         0.06       0.73 r
+  add_127/SUM[15] (M216A_TopModule_DW01_add_0)            0.00       0.73 r
+  acc3_reg[15]/D (DFCNQD2BWP16P90LVT)                     0.00       0.73 r
+  data arrival time                                                  0.73
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.10       1.90
+  acc3_reg[15]/CP (DFCNQD2BWP16P90LVT)                    0.00       1.90 r
+  library setup time                                     -0.02       1.88
+  data required time                                                 1.88
+  --------------------------------------------------------------------------
+  data required time                                                 1.88
+  data arrival time                                                 -0.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.16
+
+
+  Startpoint: acc2_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: acc3_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  M216A_TopModule    ZeroWireload          N16ADFP_StdCellss0p72v125c
+  M216A_TopModule_DW01_add_1
+                     ZeroWireload          N16ADFP_StdCellss0p72v125c
+  M216A_TopModule_DW01_add_0
+                     ZeroWireload          N16ADFP_StdCellss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  acc2_reg[0]/CP (DFCNQD2BWP16P90LVT)                     0.00       0.00 r
+  acc2_reg[0]/Q (DFCNQD2BWP16P90LVT)                      0.04       0.04 f
+  U88/Z (DEL050D1BWP20P90)                                0.09       0.13 f
+  add_127/B[0] (M216A_TopModule_DW01_add_0)               0.00       0.13 f
+  add_127/U17/Z (AN2D1BWP16P90LVT)                        0.01       0.14 f
+  add_127/U1_1/CO (FA1D2BWP20P90)                         0.04       0.18 f
+  add_127/U1_2/CO (FA1D2BWP20P90)                         0.04       0.22 f
+  add_127/U1_3/CO (FA1D2BWP20P90)                         0.04       0.25 f
+  add_127/U1_4/CO (FA1D2BWP20P90)                         0.04       0.29 f
+  add_127/U1_5/CO (FA1D2BWP20P90)                         0.04       0.33 f
+  add_127/U1_6/CO (FA1D2BWP20P90)                         0.04       0.37 f
+  add_127/U1_7/CO (FA1D2BWP20P90)                         0.04       0.40 f
+  add_127/U1_8/CO (FA1D2BWP20P90)                         0.04       0.44 f
+  add_127/U1_9/CO (FA1D2BWP20P90)                         0.04       0.48 f
+  add_127/U1_10/CO (FA1D2BWP20P90)                        0.04       0.52 f
+  add_127/U1_11/CO (FA1D2BWP20P90)                        0.04       0.55 f
+  add_127/U1_12/CO (FA1D2BWP20P90)                        0.04       0.59 f
+  add_127/U1_13/CO (FA1D2BWP20P90)                        0.04       0.63 f
+  add_127/U1_14/S (FA1D2BWP20P90)                         0.06       0.69 r
+  add_127/U1/Z (DEL025D1BWP20P90)                         0.04       0.73 r
+  add_127/SUM[14] (M216A_TopModule_DW01_add_0)            0.00       0.73 r
+  acc3_reg[14]/D (DFCNQD2BWP16P90LVT)                     0.00       0.73 r
+  data arrival time                                                  0.73
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.10       1.90
+  acc3_reg[14]/CP (DFCNQD2BWP16P90LVT)                    0.00       1.90 r
+  library setup time                                     -0.02       1.88
+  data required time                                                 1.88
+  --------------------------------------------------------------------------
+  data required time                                                 1.88
+  data arrival time                                                 -0.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.16
+
+
+  Startpoint: acc2_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: acc3_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  M216A_TopModule    ZeroWireload          N16ADFP_StdCellss0p72v125c
+  M216A_TopModule_DW01_add_1
+                     ZeroWireload          N16ADFP_StdCellss0p72v125c
+  M216A_TopModule_DW01_add_0
+                     ZeroWireload          N16ADFP_StdCellss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  acc2_reg[0]/CP (DFCNQD2BWP16P90LVT)                     0.00       0.00 r
+  acc2_reg[0]/Q (DFCNQD2BWP16P90LVT)                      0.04       0.04 f
+  U88/Z (DEL050D1BWP20P90)                                0.09       0.13 f
+  add_127/B[0] (M216A_TopModule_DW01_add_0)               0.00       0.13 f
+  add_127/U17/Z (AN2D1BWP16P90LVT)                        0.01       0.14 f
+  add_127/U1_1/CO (FA1D2BWP20P90)                         0.04       0.18 f
+  add_127/U1_2/CO (FA1D2BWP20P90)                         0.04       0.22 f
+  add_127/U1_3/CO (FA1D2BWP20P90)                         0.04       0.25 f
+  add_127/U1_4/CO (FA1D2BWP20P90)                         0.04       0.29 f
+  add_127/U1_5/CO (FA1D2BWP20P90)                         0.04       0.33 f
+  add_127/U1_6/CO (FA1D2BWP20P90)                         0.04       0.37 f
+  add_127/U1_7/CO (FA1D2BWP20P90)                         0.04       0.40 f
+  add_127/U1_8/CO (FA1D2BWP20P90)                         0.04       0.44 f
+  add_127/U1_9/CO (FA1D2BWP20P90)                         0.04       0.48 f
+  add_127/U1_10/CO (FA1D2BWP20P90)                        0.04       0.52 f
+  add_127/U1_11/CO (FA1D2BWP20P90)                        0.04       0.55 f
+  add_127/U1_12/CO (FA1D2BWP20P90)                        0.04       0.59 f
+  add_127/U1_13/CO (FA1D2BWP20P90)                        0.04       0.63 f
+  add_127/U1_14/S (FA1D2BWP20P90)                         0.06       0.69 r
+  add_127/U1/Z (DEL025D1BWP20P90)                         0.04       0.73 r
+  add_127/SUM[14] (M216A_TopModule_DW01_add_0)            0.00       0.73 r
+  acc3_reg[14]/D (DFCNQD2BWP16P90LVT)                     0.00       0.73 r
+  data arrival time                                                  0.73
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.10       1.90
+  acc3_reg[14]/CP (DFCNQD2BWP16P90LVT)                    0.00       1.90 r
+  library setup time                                     -0.02       1.88
+  data required time                                                 1.88
+  --------------------------------------------------------------------------
+  data required time                                                 1.88
+  data arrival time                                                 -0.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.16
+
+
+  Startpoint: acc2_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: acc3_reg[13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  M216A_TopModule    ZeroWireload          N16ADFP_StdCellss0p72v125c
+  M216A_TopModule_DW01_add_1
+                     ZeroWireload          N16ADFP_StdCellss0p72v125c
+  M216A_TopModule_DW01_add_0
+                     ZeroWireload          N16ADFP_StdCellss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  acc2_reg[0]/CP (DFCNQD2BWP16P90LVT)                     0.00       0.00 r
+  acc2_reg[0]/Q (DFCNQD2BWP16P90LVT)                      0.04       0.04 f
+  U88/Z (DEL050D1BWP20P90)                                0.09       0.13 f
+  add_127/B[0] (M216A_TopModule_DW01_add_0)               0.00       0.13 f
+  add_127/U17/Z (AN2D1BWP16P90LVT)                        0.01       0.14 f
+  add_127/U1_1/CO (FA1D2BWP20P90)                         0.04       0.18 f
+  add_127/U1_2/CO (FA1D2BWP20P90)                         0.04       0.22 f
+  add_127/U1_3/CO (FA1D2BWP20P90)                         0.04       0.25 f
+  add_127/U1_4/CO (FA1D2BWP20P90)                         0.04       0.29 f
+  add_127/U1_5/CO (FA1D2BWP20P90)                         0.04       0.33 f
+  add_127/U1_6/CO (FA1D2BWP20P90)                         0.04       0.37 f
+  add_127/U1_7/CO (FA1D2BWP20P90)                         0.04       0.40 f
+  add_127/U1_8/CO (FA1D2BWP20P90)                         0.04       0.44 f
+  add_127/U1_9/CO (FA1D2BWP20P90)                         0.04       0.48 f
+  add_127/U1_10/CO (FA1D2BWP20P90)                        0.04       0.52 f
+  add_127/U1_11/CO (FA1D2BWP20P90)                        0.04       0.55 f
+  add_127/U1_12/CO (FA1D2BWP20P90)                        0.04       0.59 f
+  add_127/U1_13/S (FA1D2BWP20P90)                         0.06       0.65 r
+  add_127/U2/Z (DEL025D1BWP20P90)                         0.04       0.69 r
+  add_127/SUM[13] (M216A_TopModule_DW01_add_0)            0.00       0.69 r
+  acc3_reg[13]/D (DFCNQD2BWP16P90LVT)                     0.00       0.69 r
+  data arrival time                                                  0.69
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.10       1.90
+  acc3_reg[13]/CP (DFCNQD2BWP16P90LVT)                    0.00       1.90 r
+  library setup time                                     -0.02       1.88
+  data required time                                                 1.88
+  --------------------------------------------------------------------------
+  data required time                                                 1.88
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.19
+
+
+  Startpoint: acc2_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: acc3_reg[13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  M216A_TopModule    ZeroWireload          N16ADFP_StdCellss0p72v125c
+  M216A_TopModule_DW01_add_1
+                     ZeroWireload          N16ADFP_StdCellss0p72v125c
+  M216A_TopModule_DW01_add_0
+                     ZeroWireload          N16ADFP_StdCellss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  acc2_reg[0]/CP (DFCNQD2BWP16P90LVT)                     0.00       0.00 r
+  acc2_reg[0]/Q (DFCNQD2BWP16P90LVT)                      0.04       0.04 f
+  U88/Z (DEL050D1BWP20P90)                                0.09       0.13 f
+  add_127/B[0] (M216A_TopModule_DW01_add_0)               0.00       0.13 f
+  add_127/U17/Z (AN2D1BWP16P90LVT)                        0.01       0.14 f
+  add_127/U1_1/CO (FA1D2BWP20P90)                         0.04       0.18 f
+  add_127/U1_2/CO (FA1D2BWP20P90)                         0.04       0.22 f
+  add_127/U1_3/CO (FA1D2BWP20P90)                         0.04       0.25 f
+  add_127/U1_4/CO (FA1D2BWP20P90)                         0.04       0.29 f
+  add_127/U1_5/CO (FA1D2BWP20P90)                         0.04       0.33 f
+  add_127/U1_6/CO (FA1D2BWP20P90)                         0.04       0.37 f
+  add_127/U1_7/CO (FA1D2BWP20P90)                         0.04       0.40 f
+  add_127/U1_8/CO (FA1D2BWP20P90)                         0.04       0.44 f
+  add_127/U1_9/CO (FA1D2BWP20P90)                         0.04       0.48 f
+  add_127/U1_10/CO (FA1D2BWP20P90)                        0.04       0.52 f
+  add_127/U1_11/CO (FA1D2BWP20P90)                        0.04       0.55 f
+  add_127/U1_12/CO (FA1D2BWP20P90)                        0.04       0.59 f
+  add_127/U1_13/S (FA1D2BWP20P90)                         0.06       0.65 r
+  add_127/U2/Z (DEL025D1BWP20P90)                         0.04       0.69 r
+  add_127/SUM[13] (M216A_TopModule_DW01_add_0)            0.00       0.69 r
+  acc3_reg[13]/D (DFCNQD2BWP16P90LVT)                     0.00       0.69 r
+  data arrival time                                                  0.69
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.10       1.90
+  acc3_reg[13]/CP (DFCNQD2BWP16P90LVT)                    0.00       1.90 r
+  library setup time                                     -0.02       1.88
+  data required time                                                 1.88
+  --------------------------------------------------------------------------
+  data required time                                                 1.88
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.20
+
+
+  Startpoint: acc2_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: acc3_reg[16]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  M216A_TopModule    ZeroWireload          N16ADFP_StdCellss0p72v125c
+  M216A_TopModule_DW01_add_1
+                     ZeroWireload          N16ADFP_StdCellss0p72v125c
+  M216A_TopModule_DW01_add_0
+                     ZeroWireload          N16ADFP_StdCellss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  acc2_reg[0]/CP (DFCNQD2BWP16P90LVT)                     0.00       0.00 r
+  acc2_reg[0]/Q (DFCNQD2BWP16P90LVT)                      0.04       0.04 f
+  U88/Z (DEL050D1BWP20P90)                                0.09       0.13 f
+  add_127/B[0] (M216A_TopModule_DW01_add_0)               0.00       0.13 f
+  add_127/U17/Z (AN2D1BWP16P90LVT)                        0.01       0.14 f
+  add_127/U1_1/CO (FA1D2BWP20P90)                         0.04       0.18 f
+  add_127/U1_2/CO (FA1D2BWP20P90)                         0.04       0.22 f
+  add_127/U1_3/CO (FA1D2BWP20P90)                         0.04       0.25 f
+  add_127/U1_4/CO (FA1D2BWP20P90)                         0.04       0.29 f
+  add_127/U1_5/CO (FA1D2BWP20P90)                         0.04       0.33 f
+  add_127/U1_6/CO (FA1D2BWP20P90)                         0.04       0.37 f
+  add_127/U1_7/CO (FA1D2BWP20P90)                         0.04       0.40 f
+  add_127/U1_8/CO (FA1D2BWP20P90)                         0.04       0.44 f
+  add_127/U1_9/CO (FA1D2BWP20P90)                         0.04       0.48 f
+  add_127/U1_10/CO (FA1D2BWP20P90)                        0.04       0.52 f
+  add_127/U1_11/CO (FA1D2BWP20P90)                        0.04       0.55 f
+  add_127/U1_12/CO (FA1D2BWP20P90)                        0.04       0.59 f
+  add_127/U1_13/CO (FA1D2BWP20P90)                        0.04       0.63 f
+  add_127/U1_14/CO (FA1D2BWP20P90)                        0.04       0.67 f
+  add_127/U1_15/CO (FA1D1BWP20P90)                        0.04       0.70 f
+  add_127/SUM[16] (M216A_TopModule_DW01_add_0)            0.00       0.70 f
+  acc3_reg[16]/D (DFCNQD2BWP16P90LVT)                     0.00       0.70 f
+  data arrival time                                                  0.70
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.10       1.90
+  acc3_reg[16]/CP (DFCNQD2BWP16P90LVT)                    0.00       1.90 r
+  library setup time                                      0.00       1.90
+  data required time                                                 1.90
+  --------------------------------------------------------------------------
+  data required time                                                 1.90
+  data arrival time                                                 -0.70
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.20
+
+
+  Startpoint: acc2_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: acc3_reg[16]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  M216A_TopModule    ZeroWireload          N16ADFP_StdCellss0p72v125c
+  M216A_TopModule_DW01_add_1
+                     ZeroWireload          N16ADFP_StdCellss0p72v125c
+  M216A_TopModule_DW01_add_0
+                     ZeroWireload          N16ADFP_StdCellss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  acc2_reg[0]/CP (DFCNQD2BWP16P90LVT)                     0.00       0.00 r
+  acc2_reg[0]/Q (DFCNQD2BWP16P90LVT)                      0.04       0.04 f
+  U88/Z (DEL050D1BWP20P90)                                0.09       0.13 f
+  add_127/B[0] (M216A_TopModule_DW01_add_0)               0.00       0.13 f
+  add_127/U17/Z (AN2D1BWP16P90LVT)                        0.01       0.14 f
+  add_127/U1_1/CO (FA1D2BWP20P90)                         0.04       0.18 f
+  add_127/U1_2/CO (FA1D2BWP20P90)                         0.04       0.22 f
+  add_127/U1_3/CO (FA1D2BWP20P90)                         0.04       0.25 f
+  add_127/U1_4/CO (FA1D2BWP20P90)                         0.04       0.29 f
+  add_127/U1_5/CO (FA1D2BWP20P90)                         0.04       0.33 f
+  add_127/U1_6/CO (FA1D2BWP20P90)                         0.04       0.37 f
+  add_127/U1_7/CO (FA1D2BWP20P90)                         0.04       0.40 f
+  add_127/U1_8/CO (FA1D2BWP20P90)                         0.04       0.44 f
+  add_127/U1_9/CO (FA1D2BWP20P90)                         0.04       0.48 f
+  add_127/U1_10/CO (FA1D2BWP20P90)                        0.04       0.52 f
+  add_127/U1_11/CO (FA1D2BWP20P90)                        0.04       0.55 f
+  add_127/U1_12/CO (FA1D2BWP20P90)                        0.04       0.59 f
+  add_127/U1_13/CO (FA1D2BWP20P90)                        0.04       0.63 f
+  add_127/U1_14/CO (FA1D2BWP20P90)                        0.03       0.66 f
+  add_127/U1_15/CO (FA1D1BWP20P90)                        0.04       0.70 f
+  add_127/SUM[16] (M216A_TopModule_DW01_add_0)            0.00       0.70 f
+  acc3_reg[16]/D (DFCNQD2BWP16P90LVT)                     0.00       0.70 f
+  data arrival time                                                  0.70
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.10       1.90
+  acc3_reg[16]/CP (DFCNQD2BWP16P90LVT)                    0.00       1.90 r
+  library setup time                                      0.00       1.90
+  data required time                                                 1.90
+  --------------------------------------------------------------------------
+  data required time                                                 1.90
+  data arrival time                                                 -0.70
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.20
+
+
+  Startpoint: acc2_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: acc3_reg[12]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  M216A_TopModule    ZeroWireload          N16ADFP_StdCellss0p72v125c
+  M216A_TopModule_DW01_add_1
+                     ZeroWireload          N16ADFP_StdCellss0p72v125c
+  M216A_TopModule_DW01_add_0
+                     ZeroWireload          N16ADFP_StdCellss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  acc2_reg[0]/CP (DFCNQD2BWP16P90LVT)                     0.00       0.00 r
+  acc2_reg[0]/Q (DFCNQD2BWP16P90LVT)                      0.04       0.04 f
+  U88/Z (DEL050D1BWP20P90)                                0.09       0.13 f
+  add_127/B[0] (M216A_TopModule_DW01_add_0)               0.00       0.13 f
+  add_127/U17/Z (AN2D1BWP16P90LVT)                        0.01       0.14 f
+  add_127/U1_1/CO (FA1D2BWP20P90)                         0.04       0.18 f
+  add_127/U1_2/CO (FA1D2BWP20P90)                         0.04       0.22 f
+  add_127/U1_3/CO (FA1D2BWP20P90)                         0.04       0.25 f
+  add_127/U1_4/CO (FA1D2BWP20P90)                         0.04       0.29 f
+  add_127/U1_5/CO (FA1D2BWP20P90)                         0.04       0.33 f
+  add_127/U1_6/CO (FA1D2BWP20P90)                         0.04       0.37 f
+  add_127/U1_7/CO (FA1D2BWP20P90)                         0.04       0.40 f
+  add_127/U1_8/CO (FA1D2BWP20P90)                         0.04       0.44 f
+  add_127/U1_9/CO (FA1D2BWP20P90)                         0.04       0.48 f
+  add_127/U1_10/CO (FA1D2BWP20P90)                        0.04       0.52 f
+  add_127/U1_11/CO (FA1D2BWP20P90)                        0.04       0.55 f
+  add_127/U1_12/S (FA1D2BWP20P90)                         0.06       0.61 r
+  add_127/U3/Z (DEL025D1BWP20P90)                         0.04       0.65 r
+  add_127/SUM[12] (M216A_TopModule_DW01_add_0)            0.00       0.65 r
+  acc3_reg[12]/D (DFCNQD2BWP16P90LVT)                     0.00       0.65 r
+  data arrival time                                                  0.65
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.10       1.90
+  acc3_reg[12]/CP (DFCNQD2BWP16P90LVT)                    0.00       1.90 r
+  library setup time                                     -0.02       1.88
+  data required time                                                 1.88
+  --------------------------------------------------------------------------
+  data required time                                                 1.88
+  data arrival time                                                 -0.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.23
+
+
+  Startpoint: acc2_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: acc3_reg[12]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  M216A_TopModule    ZeroWireload          N16ADFP_StdCellss0p72v125c
+  M216A_TopModule_DW01_add_1
+                     ZeroWireload          N16ADFP_StdCellss0p72v125c
+  M216A_TopModule_DW01_add_0
+                     ZeroWireload          N16ADFP_StdCellss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  acc2_reg[0]/CP (DFCNQD2BWP16P90LVT)                     0.00       0.00 r
+  acc2_reg[0]/Q (DFCNQD2BWP16P90LVT)                      0.04       0.04 f
+  U88/Z (DEL050D1BWP20P90)                                0.09       0.13 f
+  add_127/B[0] (M216A_TopModule_DW01_add_0)               0.00       0.13 f
+  add_127/U17/Z (AN2D1BWP16P90LVT)                        0.01       0.14 f
+  add_127/U1_1/CO (FA1D2BWP20P90)                         0.04       0.18 f
+  add_127/U1_2/CO (FA1D2BWP20P90)                         0.04       0.22 f
+  add_127/U1_3/CO (FA1D2BWP20P90)                         0.04       0.25 f
+  add_127/U1_4/CO (FA1D2BWP20P90)                         0.04       0.29 f
+  add_127/U1_5/CO (FA1D2BWP20P90)                         0.04       0.33 f
+  add_127/U1_6/CO (FA1D2BWP20P90)                         0.04       0.37 f
+  add_127/U1_7/CO (FA1D2BWP20P90)                         0.04       0.40 f
+  add_127/U1_8/CO (FA1D2BWP20P90)                         0.04       0.44 f
+  add_127/U1_9/CO (FA1D2BWP20P90)                         0.04       0.48 f
+  add_127/U1_10/CO (FA1D2BWP20P90)                        0.04       0.52 f
+  add_127/U1_11/CO (FA1D2BWP20P90)                        0.04       0.55 f
+  add_127/U1_12/S (FA1D2BWP20P90)                         0.06       0.61 r
+  add_127/U3/Z (DEL025D1BWP20P90)                         0.04       0.65 r
+  add_127/SUM[12] (M216A_TopModule_DW01_add_0)            0.00       0.65 r
+  acc3_reg[12]/D (DFCNQD2BWP16P90LVT)                     0.00       0.65 r
+  data arrival time                                                  0.65
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.10       1.90
+  acc3_reg[12]/CP (DFCNQD2BWP16P90LVT)                    0.00       1.90 r
+  library setup time                                     -0.02       1.88
+  data required time                                                 1.88
+  --------------------------------------------------------------------------
+  data required time                                                 1.88
+  data arrival time                                                 -0.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.23
+
+
+1
